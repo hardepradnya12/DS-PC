@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Student Stress Survey</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f6f9;
+}
+
+.container{
+width:500px;
+margin:auto;
+margin-top:50px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+}
+
+h1{
+text-align:center;
+}
+
+.question{
+margin-top:15px;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#2ecc71;
+border:none;
+color:white;
+font-size:16px;
+border-radius:5px;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Student Stress Survey</h1>
+
+<form action="/survey" method="post">
+
+Name<br>
+<input type="text" name="student_name" required style="width:100%;padding:8px;"><br><br>
+
+<div class="question">1. Do you feel stressed?
+<br>
+<input type="radio" name="q1" value="yes">Yes
+<input type="radio" name="q1" value="no">No
+</div>
+
+<div class="question">2. Do you feel tired?
+<br>
+<input type="radio" name="q2" value="yes">Yes
+<input type="radio" name="q2" value="no">No
+</div>
+
+<div class="question">3. Do exams worry you?
+<br>
+<input type="radio" name="q3" value="yes">Yes
+<input type="radio" name="q3" value="no">No
+</div>
+
+<div class="question">4. Do you get headaches?
+<br>
+<input type="radio" name="q4" value="yes">Yes
+<input type="radio" name="q4" value="no">No
+</div>
+
+<div class="question">5. Do you feel pressure?
+<br>
+<input type="radio" name="q5" value="yes">Yes
+<input type="radio" name="q5" value="no">No
+</div>
+
+<div class="question">6. Do you sleep poorly?
+<br>
+<input type="radio" name="q6" value="yes">Yes
+<input type="radio" name="q6" value="no">No
+</div>
+
+<div class="question">7. Do you feel demotivated?
+<br>
+<input type="radio" name="q7" value="yes">Yes
+<input type="radio" name="q7" value="no">No
+</div>
+
+<div class="question">8. Are assignments stressful?
+<br>
+<input type="radio" name="q8" value="yes">Yes
+<input type="radio" name="q8" value="no">No
+</div>
+
+<div class="question">9. Trouble concentrating?
+<br>
+<input type="radio" name="q9" value="yes">Yes
+<input type="radio" name="q9" value="no">No
+</div>
+
+<div class="question">10. Worried about future?
+<br>
+<input type="radio" name="q10" value="yes">Yes
+<input type="radio" name="q10" value="no">No
+</div>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
